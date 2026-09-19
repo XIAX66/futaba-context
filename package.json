@@ -1,0 +1,34 @@
+{
+  "name": "futaba-context",
+  "version": "0.0.1",
+  "description": "A lightweight context compiler for coding agents.",
+  "type": "module",
+  "bin": {
+    "futaba": "packages/cli/bin/futaba.js"
+  },
+  "files": [
+    ".futaba",
+    "framework-src",
+    "packages/cli",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check packages/cli/bin/futaba.js && node --check packages/cli/src/main.js && npm test",
+    "prepublishOnly": "npm run check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "agent",
+    "context",
+    "codex",
+    "claude-code",
+    "skills"
+  ],
+  "author": "Xia Yuhan",
+  "license": "MIT"
+}
